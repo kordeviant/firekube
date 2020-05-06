@@ -27,6 +27,8 @@ metadata:
   namespace: default
 spec:
   type: LoadBalancer  # use ClusterIP as type here
+  externalIPs:
+    - 172.31.18.245
   ports:
     - port: 80
   selector:
