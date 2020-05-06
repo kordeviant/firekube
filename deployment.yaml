@@ -30,6 +30,6 @@ spec:
   ports:
     - port: 80
   externalIPs:
-    - 13.229.231.152
+    - 127.0.0.1
   selector:
     app: nginx-app
