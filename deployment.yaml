@@ -27,9 +27,9 @@ metadata:
   namespace: default
 spec:
   type: LoadBalancer  # use ClusterIP as type here
-  externalIPs:
-    - 13.229.231.152
   ports:
     - port: 80
+  externalIPs:
+    - 13.229.231.152
   selector:
     app: nginx-app
