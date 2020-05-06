@@ -26,10 +26,8 @@ metadata:
   name: nginx-svc
   namespace: default
 spec:
-  type: LoadBalancer  # use ClusterIP as type here
+  type: NodePort  # use ClusterIP as type here
   ports:
     - port: 80
-  externalIPs:
-    - 127.0.0.1
   selector:
     app: nginx-app
