@@ -26,7 +26,7 @@ metadata:
   name: nginx-svc
   namespace: default
 spec:
-  type: ClusterIP  # use ClusterIP as type here
+  type: NodePort  # use ClusterIP as type here
   ports:
     - port: 80
   selector:
